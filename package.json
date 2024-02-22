@@ -1,0 +1,36 @@
+{
+  "name": "submisin-om-be-1",
+  "version": "1.0.0",
+  "description": "Submision OpenMusic BE Fundamental 1",
+  "main": "server.js",
+  "scripts": {
+    "start-prod": "NODE_ENV=production node ./src/server.js",
+    "start-dev": "nodemon ./src/server.js",
+    "lint": "eslint ./src",
+    "migrate": "node-pg-migrate"
+  },
+  "author": "SYG",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.1",
+    "prettier": "^3.1.1"
+  },
+  "dependencies": {
+    "@hapi/hapi": "^20.1.0",
+    "@hapi/inert": "^7.1.0",
+    "@hapi/jwt": "^3.2.0",
+    "amqplib": "^0.10.3",
+    "auto-bind": "^4.0.0",
+    "aws-sdk": "^2.1535.0",
+    "bcrypt": "^5.1.1",
+    "dotenv": "^16.3.1",
+    "joi": "^17.11.0",
+    "nanoid": "^3.1.20",
+    "node-pg-migrate": "^6.2.2",
+    "nodemon": "^3.0.2",
+    "pg": "^8.11.3",
+    "redis": "^4.6.12"
+  }
+}
